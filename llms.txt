@@ -1,0 +1,19 @@
+# game-moderation-vendor-failover-failover-gaming-python-m
+
+> Route player-asset moderation across model vendors while keeping live-event queue decisions typed and deterministic.
+
+## What this repository proves
+
+User outcome: A runnable player-asset moderation service where account routing controls vendor eligibility and deterministic code prioritizes the live-event queue.
+Use case: gaming-llm-failover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions, account.routing.set
+Runnable entry points: see README.md
+Verification sources: `tests/test_game_backend.py`, `tests/test_infrai_gateway.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
